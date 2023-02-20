@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    :root{
+      --Moderate-violet: hsl(263, 55%, 52%);
+      --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+      --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+      --White: hsl(0, 0%, 100%);
+      --Light-gray: hsl(0, 0%, 81%);
+      --Light-grayish-blue: hsl(210, 46%, 95%);
+    }
+    *{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body{
+      font-family: 'Barlow Semi Condensed', sans-serif;
+      background-color: var(--Light-gray);
+      color: var(--White);
+    }
+    .conrainer{
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+ 
+    .grid-container{
+      height: 75%;
+      width: 75%;
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      grid-template-rows: auto auto ;
+      gap: 10px;
+    }
+
+    .item1 { 
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      background: var(--Moderate-violet) url("images/bg-pattern-quotation.svg");
+      background-repeat: no-repeat;
+      background-position: 80% 0;
+     }
+    .item2 { 
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      background-color: var(--Very-dark-grayish-blue);
+    }
+    .item3 { 
+      grid-column-start: 4;
+      grid-column-end: 5;
+      grid-row-start: 1;
+      grid-row-end: 3;
+      color: black;
+      background-color: var(--White);
+     }
+    .item4 {    
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      color: black;
+      background-color: var(--White);
+
+    }
+    .item5 {
+      grid-column-start: 2;
+      grid-column-end: 4;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      background-color: var(--Very-dark-blackish-blue);
+      }
+    
+    .item{
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    }
+
+    .persone{
+      display: flex;
+      align-items: center;
+    }
+    .avatar{
+      border-radius: 50%;
+      border: 5px solid var(--White);
+      margin-right: 20px;
+    }
+    .name{
+     margin-bottom: 10px;
+    }
+    .Verified{
+      opacity: 50%;
+    }
+    h3{
+      margin-top: 30px;
+    }
+    p{
+      margin-top: 30px;
+      opacity: 70%;
+    }
+
+    @media only screen and (max-width: 800px)  {
+
+
+      .grid-container{
+        display: block;
+      }
+      .item{
+      padding: 30px 10px;
+      margin-bottom: 30px;
+      }
+      
+    }
+
+
+
+  </style>
+</head>
+<body>
+  <div class="conrainer">
+    <div class="grid-container">
+      <div class="item item1">
+        <div class="persone">
+          <img src="./images/image-daniel.jpg" class="avatar"></img>
+          <div class="persone-info">
+            <h5 class="name"> Daniel Clifford</h5>
+            <h5 class="Verified">Verified Graduate</h5>
+          </div>
+        </div>
+        <h3 >
+          I received a job offer mid-course, and the subjects I learned were current, if not more so, 
+          in the company I joined. I honestly feel I got every penny’s worth.
+        </h3>
+        <p>
+          “ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a 
+          transition and have heard some people who had an amazing experience here. I signed up 
+          for the free intro course and found it incredibly fun! I enrolled shortly thereafter. 
+          The next 12 weeks was the best - and most grueling - time of my life. Since completing 
+          the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. ”
+        </p>
+      </div>
+      <div class="item item2">
+        <div class="persone">
+          <img src="./images/image-jonathan.jpg" class="avatar"></img>
+          <div class="persone-info">
+            <h5 class="name">  Jonathan Walters</h5>
+            <h5 class="Verified">Verified Graduate</h5>
+          </div>
+        </div>
+        <h3 >
+          The team was very supportive and kept me motivated
+        </h3>
+        <p>
+          “ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer 
+          for a big company. This was one of the best investments I’ve made in myself. ”
+        </p>
+      </div>
+      <div class="item item3">
+        <div class="persone">
+          <img src="./images/image-kira.jpg" class="avatar"></img>
+          <div class="persone-info">
+            <h5 class="name"> Kira Whittle</h5>
+            <h5 class="Verified">Verified Graduate</h5>
+          </div>
+        </div>
+        <h3 >
+          Such a life-changing experience. Highly recommended!
+        </h3>
+        <p>
+          “ Before joining the bootcamp, I’ve never written a line of code. I needed some structure from 
+          professionals who can help me learn programming step by step. I was encouraged to enroll by a former 
+          student of theirs who can only say wonderful things about the program. The entire curriculum and staff 
+          did not disappoint. They were very hands-on and I never had to wait long for assistance. The agile team 
+          project, in particular, was outstanding. It took my learning to the next level in a way that no tutorial 
+          could ever have. In fact, I’ve often referred to it during interviews as an example of my developent 
+          experience. It certainly helped me land a job as a full-stack developer after receiving multiple offers. 
+          100% recommend! ”
+          
+        </p>
+      </div>
+      <div class="item item4">
+        <div class="persone">
+          <img src="./images/image-jeanette.jpg" class="avatar"></img>
+          <div class="persone-info">
+            <h5 class="name"> Jeanette Harmon</h5>
+            <h5 class="Verified">Verified Graduate</h5>
+          </div>
+        </div>
+        <h3 >
+          An overall wonderful and rewarding experience
+        </h3>
+        <p>
+          “ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living 
+          while doing something I love. ”
+        </p>
+      </div>
+      <div class="item item5">
+        <div class="persone">
+          <img src="./images/image-patrick.jpg" class="avatar"></img>
+          <div class="persone-info">
+            <h5 class="name">  Patrick Abrams</h5>
+            <h5 class="Verified">Verified Graduate</h5>
+          </div>
+        </div>
+        <h3 >
+          Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and 
+          learning from their experiences was easy.
+        </h3>
+        <p>
+          “ The staff seem genuinely concerned about my progress which I find really refreshing. The program 
+          gave me the confidence necessary to be able to go out in the world and present myself as a capable 
+          junior developer. The standard is above the rest. You will get the personal attention you need from 
+          an incredible community of smart and amazing people. ”
+        </p>
+      </div>
+      
+    </div>
+  </div>
+
+</body>
+</html>
